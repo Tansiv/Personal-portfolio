@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init();
+        });
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background: #0e0808; color: white; }
+        .navbar { display: flex; justify-content: space-between; padding: 20px; background: black; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { color: white; text-decoration: none; }
+        
+        .hero { 
+            text-align: center; 
+            padding: 140px 50px 50px; 
+            background: url('your-hero-background.jpg') no-repeat center center/cover; 
+            position: relative; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+        }
+        .hero h1 { font-size: 50px; color: white; font-weight: bold; }
+        .hero p { font-size: 18px; color: #bbb; }
+
+        /* Updated hero-image styles */
+        .hero-image {
+            margin-top: 50px; /* Lowered image position */
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
+            object-fit: contain;
+        }
+
+        .section { text-align: center; padding: 50px; margin-top: 60px; }
+        .section-3d { background: #1e1e1e; border-radius: 15px; padding: 30px; box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3); }
+        .academic-box { background: #222; padding: 20px; border-radius: 15px; box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3); margin: 20px auto; max-width: 600px; }
+        .skill { display: inline-block; padding: 15px 25px; margin: 10px; border-radius: 10px; background: #444; color: white; font-weight: bold; }
+        .project-card { background: #1e1e1e; border-radius: 15px; padding: 20px; box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3); margin: 20px; }
+        .contact-icons img { width: 40px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" data-aos="fade-down">
+            <div class="logo">📊</div>
+            <ul class="nav-links">
+                <li><a href="#academic">Academics</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero" data-aos="fade-up">
+        <h1>Tansiv Jubayer</h1>
+        <p>Bridging AI & Engineering to Build Smart Solutions</p>
+        <div class="hero-image">
+            <img src="img/dp.jpg" alt="Profile Image">
+        </div>
+    </section>
+    
+    <section id="academic" class="section section-3d" data-aos="fade-up">
+        <h2>Academic History</h2>
+        <div class="academic-box">
+            <h3>East West University</h3>
+            <p>Bachelor of Science in Computer Science and Engineering</p>
+        </div>
+        <div class="academic-box">
+            <h3>Ideal College, Dhanmondi</h3>
+            <p>Higher Secondary Education in Science (2020)</p>
+        </div>
+        <div class="academic-box">
+            <h3>Motijheel Model School & College</h3>
+            <p>Secondary School Education in Science (2018)</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="section section-3d" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span class="skill">Python</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">Scikit-Learn</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Deep Learning</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Data Visualization</span>
+            <span class="skill">Computer Vision</span>
+            <span class="skill">Natural Language Processing</span>
+            <span class="skill">Web Scraping</span>
+            <span class="skill">Big Data</span>
+            <span class="skill">Hadoop</span>
+            <span class="skill">Apache Spark</span>
+            <span class="skill">MLOps</span>
+            <span class="skill">Cloud Computing</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Kubernetes</span>
+            <span class="skill">Git & GitHub</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">Flask</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Django</span>
+            <span class="skill">Data Structures & Algorithms</span>
+        </div>
+    </section>
+    
+    
+    <section id="projects" class="section section-3d" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project-card">📌 Detection of Sugarcane Leaf Diseases Using CNN</div>
+        <div class="project-card">📌 Earthquake Magnitude Prediction Using ML</div>
+        <div class="project-card">📌 Heat Wave Forecasting in Bangladesh</div>
+    </section>
+    
+    <section id="contact" class="section section-3d" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Email: jtanisv@gmail.com</p>
+        <p>Phone: +8801837011572</p>
+        <div class="contact-icons">
+            <a href="https://github.com/Tansiv"><img src="img/icons8-github-50.png" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/yourlinkedin"><img src="img/icons8-linkedin-50.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/tansiv.rohan.13/"><img src="img/icons8-facebook-logo-50.png" alt="Facebook"></a>
+            <a href="https://instagram.com/yourinstagram"><img src="img/icons8-insta-50.png" alt="Instagram"></a>
+            <a href="https://scholar.google.com/yourprofile"><img src="img/icons8-google-scholar-50.png" alt="Google Scholar"></a>
+        </div>
+    </section>
+    
+    <footer data-aos="fade-up">
+        <p>© 2025 Tansiv Jubayer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
